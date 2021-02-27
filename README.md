@@ -1,10 +1,12 @@
 # DSAlgo Frequency Counting
- DSAlgo Frequency Counting
+ Word Frequency Counting using Python
 
 Welcome to Word Frequency Counter! 📊 
 
 
-Objective: Running this program will
+Objective:
+
+Running this program will
 
 ```
 print all words in selected file
