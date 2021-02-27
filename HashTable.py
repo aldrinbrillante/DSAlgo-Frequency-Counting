@@ -53,12 +53,12 @@ class HashTable:
 
     if finder == -1:
       self.arr[hash_key].append(item)
-    
 
 ##################################################################################
   # 4️⃣ TODO: Complete the print_key_values method.
 
-  # Traverse through the every Linked List in the table and print the key value pairs.
+  # Traverse through the every Linked List in the table and
+  #  print the key value pairs.
 
   # For example: 
   # a: 1
