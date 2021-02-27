@@ -11,24 +11,19 @@ class LinkedList:
     new_node.next = self.head
     self.head = new_node
 
-
   def find(self,item):
-
     current = self.head
-
     found = False
-    counter = 0
 
     while current != None and not found:
 
-      if current.data == item:
+      if current.data[0] == item:
         found = True
       else:
         current = current.next
-        counter += 1
 
     if found:
-      return counter
+      current.data = (current.data[0], (current.data[1] + 1))
     else:
       return -1
 
@@ -42,7 +37,7 @@ class LinkedList:
       current = self.head
       while(current.next):
         current = current.next
-        counter +=1
+        counter += 1
       return counter
 
 
@@ -53,5 +48,5 @@ class LinkedList:
       print('The linked list is empty.')
     else:
       for i in range(self.length()):
-        print(f'Node {i}: {current.data}')
+        print(f'{current.data[0]}: {current.data}')
         current = current.next
